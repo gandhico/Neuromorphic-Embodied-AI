@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "CMG-PES Attitude Residual: Online PES Decoder Learning in Neuromorphic Residual UAV Attitude Control"
+abstract: "A bounded online neuromorphic residual for quadrotor attitude control: six continuous coupled membrane-gate (CMG) units generate temporal features and an eighteen-parameter decoder adapts online through prescribed error sensitivity (PES), augmenting a saturated attitude controller with explicit authority bounds, exact recovery of the baseline when disabled, and a saturation-aware gate. Submitted to ACC 2027."
+authors:
+  - family-names: "Contreras"
+    given-names: "Gandhi"
+    # orcid: "https://orcid.org/0009-0001-3686-9205"   # TODO: confirm this is the right ORCID for the paper byline name
+    affiliation: "New Mexico State University (NMSU)"
+  - family-names: "Sandoval"
+    given-names: "Steven"
+    affiliation: "New Mexico State University (NMSU)"
+  - family-names: "Garcia Carrillo"
+    given-names: "Luis Rodolfo"
+    affiliation: "Space Vehicles Directorate, Air Force Research Laboratory (AFRL)"
+version: "0.1.0"
+date-released: "2026-09-29"
+license: "TODO"   # e.g. MIT, Apache-2.0, BSD-3-Clause
+url: "https://github.com/gandhico/Neuromorphic-Embodied-AI/tree/main/closed-loop-control/acc2027-cmg-pes-residual"
+keywords:
+  - neuromorphic control
+  - residual learning
+  - prescribed error sensitivity
+  - quadrotor attitude control
+  - bounded control
+  - Nengo
+
+# Once the paper is published, uncomment and complete this so tools cite the paper:
+# preferred-citation:
+#   type: conference-paper
+#   title: "Online PES Decoder Learning in Neuromorphic Residual UAV Attitude Control"
+#   authors:
+#     - family-names: "Contreras"
+#       given-names: "Gandhi"
+#     - family-names: "Sandoval"
+#       given-names: "Steven"
+#     - family-names: "Garcia Carrillo"
+#       given-names: "Luis Rodolfo"
+#   collection-title: "2027 American Control Conference (ACC)"
+#   year: 2027
+#   doi: "TODO"
