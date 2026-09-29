@@ -1,3 +1,2 @@
-numpy
-mujoco
-nengo
+numpy==2.5.2
+mujoco==3.12.0

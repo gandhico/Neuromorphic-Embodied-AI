@@ -18,13 +18,23 @@ residual authority. The same bounded interface attaches without modification to 
 families beyond PD — LQR, backstepping, sliding-mode control, unconstrained MPC, and nonlinear MPC —
 improving tracking for every family and platform tested, with no per-family retuning.
 
+![Mission portraits: reference, CMG neuron activity, and tracking error across all five X2 missions](figures/mission_neuron_portraits.png)
+*What's commanded, how hard the six CMG units work, and the tracking-error payoff, per mission. Neuron
+activity sits near its resting value (~0.37) on gentle missions and saturates (latches to 1) on
+demanding ones — direct evidence for the paper's own mechanism claim, not just an assertion.*
+
+![Residual portability across six controller families](figures/A5_controller_portability.png)
+*The same bounded, gated residual attached to PD, PID, LQR, SMC, MPC, and NMPC baselines — every family
+improves, on both platforms, with no per-family retuning.*
+
 ## Repository structure
 
 ```
 .
 ├── Readme.md
 ├── CITATION.cff
-├── requirements.txt        # TODO: pin exact versions used for the paper
+├── requirements.txt
+├── figures/                 # result figures shown above
 └── gra_control/             # core library
     ├── math3d.py            # quaternion kinematics, shortest-path attitude error
     ├── gate.py               # the CMG-PES residual: encoding, PES decoder, saturation-aware gate
@@ -33,12 +43,12 @@ improving tracking for every family and platform tested, with no per-family retu
 
 ## Requirements
 
-- Python 3.x
-- NumPy
-- MuJoCo (simulation)
-- Nengo (neuron/PES substrate)
+- Python 3.11+
+- NumPy 2.5.2, MuJoCo 3.12.0 (pinned in `requirements.txt`)
 
-TODO: pin exact versions in `requirements.txt` before making public.
+The library here is pure NumPy + MuJoCo — no neuromorphic-simulator dependency to read or run it. Nengo
+enters only in the fuller experiment pipeline (the paper's neuron-family comparison, Amendment A4),
+which ships with the rest of the reproduction package upon acceptance.
 
 ## Usage / Reproducing results
 
@@ -59,8 +69,7 @@ added once the paper has a DOI.
 
 ## License
 
-TODO: Choose a license (e.g. MIT, Apache-2.0, BSD-3-Clause) and add a `LICENSE` file. Until a license
-is added, default copyright applies and others may not reuse the code.
+MIT — see the repository root [`LICENSE`](../../LICENSE).
 
 ## Contact
 
