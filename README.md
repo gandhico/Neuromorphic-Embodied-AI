@@ -20,3 +20,16 @@ public) — see that project's own README.
   twins into physical applications: real-time testing interfaces and finalized project execution.
   * [`qcar2-lane-control/`](hardware-in-the-loop/qcar2-lane-control/) — Spiking neural network lane
     control on the Quanser QCar platform, simulation and hardware.
+
+## Part of a three-pillar research portfolio
+
+This is pillar 2 of 3: single-platform embodied systems applying neural/neuromorphic architectures to
+real control problems, in simulation and hardware-in-the-loop.
+
+1. **[Neural Networks & Learning](https://github.com/gandhico/Neural-Networks-and-Learning)** —
+   architectures, learning rules, and benchmarks, independent of any one platform or application.
+2. **Neuromorphic Embodied AI** (this repository) — quadrotors, ground vehicles, fixed-wing aircraft.
+3. **Neuromorphic Multi-Agent Systems** — multi-vehicle and swarm extensions of this pillar. (Repository
+   not yet public.)
+
+Applied focus: aerospace, defense, and space.
