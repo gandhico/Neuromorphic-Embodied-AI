@@ -16,7 +16,7 @@ authors:
 version: "0.1.0"
 date-released: "2026-09-29"
 license: "TODO"   # e.g. MIT, Apache-2.0, BSD-3-Clause
-url: "https://github.com/gandhico/Neuromorphic-Embodied-AI/tree/main/closed-loop-control/acc2027-cmg-pes-residual"
+url: "https://github.com/gandhico/Neuromorphic-Embodied-AI/tree/main/online-pes-neuromorphic-residual-control"
 keywords:
   - neuromorphic control
   - residual learning

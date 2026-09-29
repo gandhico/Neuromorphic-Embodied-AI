@@ -69,7 +69,7 @@ added once the paper has a DOI.
 
 ## License
 
-MIT — see the repository root [`LICENSE`](../../LICENSE).
+MIT — see the repository root [`LICENSE`](../LICENSE).
 
 ## Contact
 
